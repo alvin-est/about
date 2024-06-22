@@ -148,6 +148,7 @@ figure figcaption {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-size: 100%;
+    text-shadow: 1px 1px #0c1618;
 }
 
 #about aside {
@@ -174,6 +175,8 @@ figure figcaption {
     margin: 1%;
     padding: 0;
     text-align: center;
+    background-color: #26547c;
+    border-radius: 5px;
 }
 
 .portfolio section p {
@@ -268,6 +271,25 @@ footer .copyright {
     margin-top: 7px;
 }
 
+/* adding some more code for in-article quote */
+
+article .quote {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    display:block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 3%;
+    font-size: 100%;
+    text-shadow: 1px 1px #0c1618;
+}
+
+article .quote::before {
+    content: '"';
+}
+
+article .quote::after {
+    content: '"';
+}
 
 
 /* Responsive Mobile UI */
