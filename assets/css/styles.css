@@ -146,7 +146,7 @@ figure figcaption {
 .avatar figure figcaption {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
+    
     font-size: 100%;
     text-shadow: 1px 1px #0c1618;
 }
@@ -173,7 +173,7 @@ figure figcaption {
     border: 1px solid black;
     width: 48%;
     margin: 1%;
-    padding: 0;
+    padding: 5px;
     text-align: center;
     background-color: #26547c;
     border-radius: 5px;
@@ -276,7 +276,7 @@ footer .copyright {
 article .quote {
     font-family: Georgia, Times, 'Times New Roman', serif;
     display:block;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     padding: 3%;
     font-size: 100%;
@@ -353,8 +353,16 @@ article .quote::after {
 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 495px) {
     nav a:hover::before {
         content: "";
+    }
+    .socials ul li {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    .socials {
+        margin-top: -20px;
     }
 }
